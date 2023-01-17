@@ -1,0 +1,50 @@
+---
+title: Introduction to Kibana
+description: How to use Kibana for your care flow visualizations
+---
+
+[Kibana](https://www.elastic.co/kibana/) is a data visualization tool that allows you to create data dashboards with the data collected or generated in Awell care flows. This page will help you to get started with Kibana.
+
+## Get access to Kibana
+
+You need an account to log into Kibana. Please **reach out to your Awell customer success manager** to receive your account details.
+
+Once you have received your account details, you can access the Awell Kibana environment via [this link](https://kibana.awellhealth.com/login?next=%2F).
+
+## Your Kibana spaces
+
+In Kibana, dashboards are organized into **spaces**. When you log in, you'll have access to 2 Kibana spaces:
+* **Care Flow Metrics**: This space contains default dashboards created by Awell. You only have _view_ rights in this space.
+* **Your dedicated space**: This is an empty space, named after your organization, where you can create your own data dashboards. You have _edit_ rights in this space.
+
+### Care Flow Metrics space
+
+The 2 default dashboards available in this space are the following:
+* **Business Metrics**: This dashboard allows you to see the number of care flows (pathways) started, monthly active patients (see definition [here](https://developers.awellhealth.com/awell-orchestration/docs/data/monthly-active-patients)), activities created (see definition [here](https://developers.awellhealth.com/awell-orchestration/docs/getting-started/domain-model#activities)) and daily active patients.
+* **Pathway Monitoring**: This dashboards gives a first impression of the completion of your care flows by showing the difference between the number of steps and activities created and steps and activities completed.
+
+### Your dedicated space
+
+You can use this space to create your own dashboards. See more info on [Create dashboards with Awell](https://developers.awellhealth.com/awell-orchestration/docs/data/kibana/create-dashboards).
+
+## Explore data in Kibana
+
+You can explore your data by going to the 'Discover' section in Kibana (Open Main Menu on the top left in a space and click 'Discover').
+
+In Discover, you'll find the following elements:
+* Top left: A drop-down to select a data view.
+* Left: A list of the fields/properties available in the selected data view.
+* Top: A search bar to filter the data using the [Kibana Querly Language](https://www.elastic.co/guide/en/kibana/master/kuery-query.html) and an interactive histogram that shows the distribution of data over time.
+* Middle: A preview of the data (or 'documents' as called in Kibana) in the selected data view.
+
+You'll have acces to 4 different indices/data views (more info about these indices can be found on [Data repository](https://developers.awellhealth.com/awell-orchestration/docs/data/data-repository)):
+* orchestration-datapoint
+* orchestration-pathway
+* orchestration-step
+* orchestration-activity
+
+## Create dashboards in Kibana
+
+You can create dashboards by going to the 'Dashboard' section in Kibana (Open Main Menu on the top left in a space and click 'Dashboard').
+
+More information on how to create dashboards in Kibana can be found on [Create dashboards with Awell](https://developers.awellhealth.com/awell-orchestration/docs/data/kibana/create-dashboards) or on the [Quick Start guide](https://www.elastic.co/guide/en/kibana/master/get-started.html) created by Kibana.
